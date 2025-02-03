@@ -7,6 +7,7 @@
 
 Este projeto é uma **calculadora simples** desenvolvida como parte do programa de capacitação **3035Teach** da empresa **3035 Tech**. O objetivo foi praticar e aprimorar habilidades em **HTML**, **CSS** e **JavaScript**, criando uma aplicação funcional e responsiva.
 
+Caso queira acessá-lo, clique [aqui](https://felipecardosovargas.github.io/Tarefa_5/).
 ---
 
 ## Funcionalidades
