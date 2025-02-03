@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo {
+    background-image: linear-gradient(45deg, black, #642C9D);
+    min-height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    max-width: 65%;
+}
+
+.divisora {
+    display: flex; /* Define o layout flex para distribuir as divs lado a lado */
+    justify-content: space-between; /* Garante que as divs ocupem o espaço disponível de forma equilibrada */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha quando necessário */
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .divisora {
+        flex-direction: column; /* Coloca os elementos um embaixo do outro em telas menores que 768px */
+    }
+}
+
+.calculadora {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #4C1691;
+}
+
+#resultado {
+    background-color: white;
+    width: 100%;
+    max-width: 225px; /* Aumenta a largura máxima para 300px */
+    height: 40px; /* Aumenta a altura para 70px */
+    margin: 10px 0; /* Mantém a margem de 10px em cima e embaixo */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte para 1.5rem */
+    color: black;
+    text-align: right;
+    padding: 10px 15px; /* Aumenta o padding para dar mais espaço dentro */
+    border-radius: 8px; /* Aumenta o raio de borda */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Aumenta o sombreamento */
+    border: 1px solid #ccc;
+}
+
+.historico {
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+    overflow-y: auto;
+    width: 260px; 
+}
+
+.historico h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.historico ul {
+    list-style: none;
+    padding: 0;
+}
+
+.historico li {
+    background: #222222;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .calculadora {
+        max-width: 400px;
+    }
+
+    .historico {
+        max-width: 300px;
+    }
+
+    p {
+        max-width: 60%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .fundo {
+        padding: 2rem;
+    }
+}
