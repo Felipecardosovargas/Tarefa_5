@@ -49,7 +49,7 @@ A calculadora possui as seguintes funcionalidades:
 ## 📁 Estrutura do Projeto
 
 ```
-calculadora-3035tech/
+Tarefa_5/
 │
 ├── index.html            # Arquivo principal (HTML)
 ├── script.js             # Lógica da calculadora (JavaScript)
